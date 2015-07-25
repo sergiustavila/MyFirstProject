@@ -1,0 +1,66 @@
+#!/usr/bin/python
+
+choice = raw_input('Do you want to convert the currency?')
+if choice == 'yes':
+	euro = 'euro'
+	dollars = 'dollars'
+	rub = 'rub'
+	lei = 'lei'
+	print("Welcome to the currency converter")
+var1 = input("Please type what currency you wish to convert from ")
+var2 = input("Please type the currency that you wish to convert to ")
+var3 = int(input("Please type the amount of currency you wish to convert "))
+if var1 == euro and var2 == dollars:
+	sum_usd = var3 * 1.1
+	print('You will recieve ', sum_usd)
+
+if var1 == dollars and var2 == euro:
+        sum_euro = var3 * 0.91
+        print('You will recieve ', sum_euro)
+
+if var1 == dollars and var2 == rub:
+        sum_rub = var3 * 57.45
+        print('You will recieve ', sum_rub)
+
+if var1 == dollars and var2 == lei:
+        sum_lei = var3 * 19.1
+        print('You will recieve ', sum_lei)
+
+if var1 == euro and var2 == rub:
+        sum_rub = var3 * 63.17
+        print('You will recieve ', sum_rub)
+
+if var1 == euro and var2 == lei:
+        sum_lei = var3 * 21
+        print('You will recieve ', sum_lei)
+
+if var1 == dollars and var2 == euro:
+        sum_euro = var3 * 0.91
+        print('You will recieve ', sum_euro)
+
+if var1 == rub and var2 == dollars:
+        sum_usd = var3 * 0.02
+        print('You will recieve ', sum_usd)
+
+if var1 == rub and var2 == euro:
+        sum_euro = var3 * 0.02
+        print('You will recieve ', sum_euro)
+
+if var1 == rub and var2 == lei:
+        sum_lei = var3 * 0.33
+        print('You will recieve ', sum_lei)
+
+if var1 == lei and var2 == dollars:
+        sum_dollars = var3 * 0.05
+        print('You will recieve ', sum_dollars)
+
+if var1 == lei and var2 == euro:
+        sum_euro = var3 * 0.05
+        print('You will recieve ', sum_euro)
+
+if var1 == lei and var2 == rub:
+        sum_rub = var3 * 3.01
+        print('You will recieve ', sum_rub)
+
+elif choice == 'no':
+	print 'then you suck'
